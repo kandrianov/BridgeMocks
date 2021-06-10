@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.7.0;
+pragma solidity 0.8.4;
 pragma experimental ABIEncoderV2;
 
 contract AtomicaProductETH {
@@ -19,7 +19,7 @@ contract AtomicaProductETH {
         premiumToken = premiumToken_;
     }
 
-    function quote(uint256 marketId, uint256 coverage) external view returns (uint256) {
+    function quote(uint256 marketId, uint256 coverage) external pure returns (uint256) {
         return 1E5;
     }
 
